@@ -1,0 +1,13 @@
+{
+  "name": "astronomy-aql-functions",
+  "version": "0.0.1",
+  "description": "ArangoDB AQL User Defined Functions for Astronomy Applications",
+  "author": "Noah Franz",
+  "license": "MIT",
+  "engines": { "arangodb": "^3.0.0" },
+  "main": "main.js",
+  "scripts": {
+    "setup": "setup.js",
+    "teardown": "teardown.js"
+  }
+}
