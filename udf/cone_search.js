@@ -1,7 +1,7 @@
 module.exports = {
   name: "ASTRO::CONE_SEARCH",
   isDeterministic: true,
-  code: function(ra, dec, separation) {
+  code: `function(ra, dec, separation) {
     const toRad = (deg) => deg * Math.PI / 180;
     const ra1  = toRad(ra);
     const dec1 = toRad(dec);
@@ -19,5 +19,5 @@ module.exports = {
     };
 
     return haversine(ra, dec) <= sep;
-  }.toString()
+  }`
 };
